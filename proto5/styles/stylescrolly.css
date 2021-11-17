@@ -58,6 +58,8 @@ svg {
   width: 100%;
   height: 100%;
   transition: all 0.3s linear;
+  position: relative;
+  left: -100px;
 }
 
 #scrolly {
@@ -72,39 +74,45 @@ section {
 .scroll-step {
   background-color: white;
   font-family: "Dongle", sans-serif;
+  font-size: 25px;
   color: black;
-  height: 180px;
-  width: 300px;
+  height: 280px;
+  width: 450px;
   border: 1px solid black;
   padding: 20px;
   margin: 50px;
   box-shadow: 6px 8px 15px darkblue;
 }
 
+.text-holder{
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  left: 30px;
+}
+
 .intro {
   position: relative;
   height: 600px;
-  font-size: 60px;
   flex-wrap: wrap;
 justify-content: center;
   align-items: center;
 
 }
 
-
-
 #titlebackground{
-
   display: flex;
   animation: title 30s infinite;
   font-family: myFirstFont;
   color: goldenrod;
+  /* word-spacing: 7px; */
+  font-size: 60px;
   letter-spacing: 30px;
 }
 
 @keyframes title {
   from {
-    transform: translateX(-1600px);
+    transform: translateX(-1200px);
 
   }
   to {
@@ -121,11 +129,40 @@ justify-content: center;
   background-color: black;
 padding: 10px;
 box-shadow: 6px 8px 15px goldenrod;
-
-
 }
 
+#top10title {
+  font-family: myFirstFont;
+  color: goldenrod;
+  letter-spacing: 10px;
+  font-size: 50px;
+}
 
+.faster{
+  font-family: myFirstFont;
+  color: goldenrod;
+  letter-spacing: 10px;
+  font-size: 30px; 
+  position: relative;
+  top: 600px;
+  left: 10px;
+  text-shadow: 4px 2px 2px black;
+}
+
+.ten{
+  position: absolute;
+top: 500px;
+font-size: 60px;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+width: 100vw;
+position: relative;
+left: -20px;
+background-color: black;
+padding: 10px;
+box-shadow: 6px 8px 15px goldenrod;
+}
 
 
 .shape {
@@ -152,7 +189,10 @@ box-shadow: 6px 8px 15px goldenrod;
   flex-direction: column;
   height: auto;
   width: auto;
-  justify-content: center;
+ gap: 200px;
+  position: relative;
+  top: 1000px;
+  
 }
 
 h3{
@@ -161,6 +201,8 @@ h3{
   font-family: myFirstFont;
   letter-spacing: 5mm;
   size: 15px;
+  text-shadow: 4px 2px 2px black;
+
 }
 
 .spacer{
@@ -222,13 +264,11 @@ h3{
   animation: trains10 24s infinite;
 }
 
-
 .trains{
   line-height: 30px;
   width: 800px;
   height: 160px;
 }
-
 
 @keyframes trains1 {
   from {
@@ -340,62 +380,29 @@ h3{
   }
 }
 
-#cloud3 {
-  z-index: 1;
-  opacity: 1;
+.cloudtitre{
   position: absolute;
-  left: 0px;
-  top: 0px;
+top: 1400px;
+font-size: 60px;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+width: 100vw;
+position: relative;
+left: -20px;
+background-color: black;
+padding: 10px;
+box-shadow: 6px 8px 15px goldenrod;
 }
 
-#cloud3:hover {
-  animation: fade-out 5s;
-}
-
-
-@keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-
-#cloud2 {
-  z-index: 1;
-  opacity: 1;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
-
-#cloud2:hover{
-  animation: left-out 2s;
-}
- @keyframes left-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-
-#cloud1 {
+/* #cloud1 {
   position: absolute;
   opacity: 1;
   left: 0px;
   top: 0px;
-}
+} */
 
-#cloud1:hover{
-  animation: fade-out 5s;
-}
-
+/* 
 @keyframes right-out {
   from {
     opacity: 1;
@@ -403,20 +410,23 @@ h3{
   to {
     opacity: 0;
   }
-}
+} */
 
 .cloudvis {
   position: relative;
   justify-content: center;
-  align-content: cen;
+  align-content: center;
   width: 100vw;
   height: auto;
-  top: 100%;
+  top: 1125px;
+  left: -60px;
+
 }
 
 .sectioncloud{
   position: relative;
 }
+
 .thecloud{
   z-index: 0;
   position: absolute;
@@ -424,4 +434,56 @@ h3{
   top: 700px;
   height: 800px;
   width: auto;
+}
+
+.bigguy:hover{
+opacity: 0;
+transition: ease-out 10s;
+}
+
+.bigguy{
+opacity: 1;
+position: absolute;
+top: 200px;
+left: -700px;
+z-index: 10;
+
+}
+
+#cloud1{
+z-index: -20;
+}
+
+.LastTitle{
+  position: absolute;
+top:  1050px;
+left: -20px;
+font-size: 60px;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+width: 100vw;
+position: relative;
+background-color: black;
+padding: 10px;
+}
+
+#EndTitle {
+  font-family: myFirstFont;
+  color: rgb(130, 130, 197);
+  letter-spacing: 10px;
+  font-size: 15px;
+  animation: endtitle 40s infinite;
+  text-decoration: none;
+}
+
+@keyframes endtitle {
+  from {
+    transform: translateX(-1700px);
+
+  }
+  to {
+    transform: translateX(2000px);
+
+  }
 }

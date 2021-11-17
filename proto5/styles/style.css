@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* html,
 .gif {
   height: 100vh;
@@ -18,6 +22,38 @@
   filter: blur(2px);
 } */
 
+.FirstTitle{
+  position: absolute;
+top: 0px;
+font-size: 60px;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+width: 100vw;
+position: relative;
+background-color: black;
+padding: 10px;
+}
+
+#CoinTitle {
+  font-family: myFirstFont;
+  color: rgb(212, 209, 209);
+  letter-spacing: 10px;
+  font-size: 15px;
+  animation: title 40s infinite;
+}
+
+@keyframes title {
+  from {
+    transform: translateX(-1700px);
+
+  }
+  to {
+    transform: translateX(2000px);
+
+  }
+}
+
 .formatvideo{
  position: fixed;
  overflow: hidden;
@@ -25,9 +61,10 @@
  left: 50%;
  /* min-width: 100%;
  min-height: 100%; */
- width: 1525px;
+ width: 1925px;
  height: auto;
  transform: translateX(-50%) translateY(-50%);
+ z-index: -15;
 }
 
 .webgl {
@@ -48,12 +85,15 @@ a {
   background-color: black;
   color: goldenrod;
   position: absolute;
-  bottom: -350px;
+  bottom: -410px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 80px;
-  line-height: 200%;
+  line-height: 225%;
+  font-size: 18px;
+  letter-spacing: 2.19px;
+  word-spacing: 5px;
 }
 
 @font-face {
