@@ -1,3 +1,14 @@
+// const sizes = {
+//   width: window.innerWidth,
+//   height: window.innerHeight
+// }
+
+// renderer.setSize(sizes.width, sizes.height)
+// renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+
+// sizes.width = window.innerWidth
+// sizes.height = window.innerHeight
+
 document.addEventListener('DOMContentLoaded', async function () {
 
     function changeOpacity(index, opacityValue){

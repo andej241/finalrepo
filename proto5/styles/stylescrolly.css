@@ -81,17 +81,55 @@ section {
   box-shadow: 6px 8px 15px darkblue;
 }
 
-.intro,
-.end {
+.intro {
+  position: relative;
   height: 600px;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
+  font-size: 60px;
+  flex-wrap: wrap;
+justify-content: center;
   align-items: center;
+
 }
 
+
+
+#titlebackground{
+
+  display: flex;
+  animation: title 30s infinite;
+  font-family: myFirstFont;
+  color: goldenrod;
+  letter-spacing: 30px;
+}
+
+@keyframes title {
+  from {
+    transform: translateX(-1600px);
+
+  }
+  to {
+    transform: translateX(2000px);
+
+  }
+}
+
+#bot{
+  width: 100vw;
+  left: -50px;
+  position: relative;
+  top: -20px;
+  background-color: black;
+padding: 10px;
+box-shadow: 6px 8px 15px goldenrod;
+
+
+}
+
+
+
+
 .shape {
-  box-shadow: 6px 8px 15px darkblue;
+  box-shadow: 6px 8px 15px goldenrod;
   transition: opacity 1s linear;
   opacity: 0;
 }
