@@ -43,6 +43,6 @@ document.addEventListener('DOMContentLoaded', async function () {
           changeFirstOpacity(400, 400);     
           changeSecondOpacity(400, 400); 
         }
-      });
       
   });
+});
