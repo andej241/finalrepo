@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+
+  }
+  body{
+    background-color: black;
+  }
+
+  .home{    
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+.formatvideo{
+    position: fixed !important;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    /* min-width: 100%;
+    min-height: 100%; */
+    width: 1925px;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -15;
+   }
+
+   #ltn{
+
+    z-index: 5;
+    font-family: sans-serif;
+    font-size: 28px;
+    opacity: .63;
+    font-family: enter;
+    color: whitesmoke;
+    text-decoration: none;
+    animation: 7s ltn normal;
+}
+
+@keyframes ltn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+#enter{
+    position: absolute;
+    top: 93%;
+    left: 50%;
+}
+
+#ltn:hover{
+  opacity: .8;
+}
+
+@font-face {
+  font-family: enter;
+  src: url("../assets/text/LexendZetta-Thin.ttf");
+}
+
+
+/* Navagtion */
+
+
+@font-face {
+  font-family: bold;
+  src: url("../assets/text/LexendZetta-Thin.ttf");
+}
+
+
+#nav2{
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+  .lint{
+    justify-content: center;
+    position: relative;
+    display: flex;
+    width: 20vw;
+    height: 5vh;
+    border-radius: 10% 30% 50% 70%;
+    align-items: center;
+    margin: 100px;
+    border-radius: 100px;
+      color: white;
+      font-family: bold;
+      text-decoration: none;
+
+      animation: 1s nav normal;
+  }
+
+@keyframes nav{
+  from{
+  opacity: 0;
+}
+to{
+  opacity: 1;
+}
+}
+  .lint:hover{
+    transition-duration: 1s;
+    box-shadow:
+    inset 0 0 20px blue,      
+    inset 20px 0 20px blue,   
+    inset -20px 0 80px blue,  
+    inset 20px 0 20px blueviolet,  
+    inset -20px 0 300px blue, 
+    0 0 50px blue,            
+    -10px 0 400px blueviolet,      
+    10px 0 400px blue;    
+  }
+
+  /* ABOUT */
+
+  @font-face {
+    font-family: dark;
+    src: url(../assets/text/LexendZetta-Light.ttf);
+  }
+ 
+#header{
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin-top: 5%;
+}
+#prof{
+  width: 16vw;
+  animation: 5s squ normal;
+ 
+}
+
+
+#name{
+  margin-top: 5%;
+  font-family: dark;
+  color: rgb(250, 250, 250);
+  font-size: 400%;
+  letter-spacing: 1vw;
+}
+
+#cv{
+  animation: 2.5s cv normal;
+
+}
+
+@keyframes cv{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+  /* WORK */
+
+  #workbuttons{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    animation: butts 1s normal;
+    display: flex;
+  }
+
+  .buttons{
+    justify-content: center;
+    position: static;
+    display: flex;
+    width: 20vw;
+    height: 5vh;
+    align-items: center;
+    border-radius: 100px;
+    border: .005vw solid rgb(250, 250, 250);
+
+    margin: 2vw;
+  }
+
+  .buttons:hover{
+
+    border: rgb(13, 13, 167);
+  }
+
+  .buttons:hover{
+    transition-duration: .4s;
+    background-color: rgb(13, 13, 167);
+
+  }
+
+  .ww{
+    animation: ww 8s normal;
+    color: white;
+    font-family: bold;
+    text-decoration: none;
+    font-size: larger;
+    letter-spacing: .35vw;
+  }
+  
+
+  @keyframes ww {
+    from {
+      opacity: 0;
+  
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes butts {
+    from {
+      opacity: 0;
+  
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  #work{
+    overflow-y: hidden;
+  }
+
+  #photo{
+    animation: photo 5s normal;
+  }
+
+  #film{
+    animation: film 5s normal;
+  }
+
+  #modeling{
+    animation: modeling 5s normal;
+  }
+
+  #colab{
+    animation: colab 5s normal;
+  }
+
+@keyframes photo {
+  from {
+    width: 3vw;
+    /* transform: translateX(0vw); */
+
+  }
+  to {
+    width: 20vw;
+    /* transform: translateX(100vw); */
+
+  }
+}
+
+@keyframes film {
+  from {
+    width: 3vw;
+    /* transform: translateX(opx); */
+
+  }
+  to {
+    width: 20vw;
+
+    /* transform: translateX(2000px); */
+
+  }
+}
+
+@keyframes colab {
+  from {
+    width: 3vw;
+    /* transform: translateX(0px); */
+
+  }
+  to {
+    width: 20vw;
+
+    /* transform: translateX(2000px); */
+
+  }
+}
+
+@keyframes modeling {
+  from {
+    width: 3vw;
+    /* transform: translateX(0px); */
+
+  }
+  to {
+    width: 20vw;
+
+    /* transform: translateX(2000px); */
+
+  }
+}
+
+#Photography{
+position: relative;
+display: flex;
+justify-content: center;
+align-content: center;
+
+
+}
+
+.pbox{
+position: relative;
+
+
+}
+
+.pics{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.return{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 100px;
+}
+
+.nv{
+  position: absolute;
+  opacity: .3;
+
+}
+
+#n{
+
+  
+  animation: 10s n infinite;
+  position: absolute;
+}
+#w{
+  left: 1.1vw;
+  top: 2.5vh;
+  animation: 8s w infinite;
+  position: absolute;
+
+}
+#x{
+
+  animation: 2s x infinite;
+  left: 5vw;
+  top: 12vh;
+  position: absolute;
+
+}
+#a{
+  animation: 6s a infinite;
+  position: absolute;
+  left: 2.5vw;
+  top: 7vh;
+
+}
+#p{
+
+  animation: 4s p infinite;
+  left: 4vw;
+  top: 10vh;
+
+  position: absolute;
+}
+@keyframes x{
+  50% {transform: rotate(360deg);}
+}
+
+@keyframes w{
+  50% {transform: rotate(-240deg);}
+}
+
+@keyframes n{
+  50% {transform: rotate(180deg);}
+}
+
+@keyframes a{
+  50% {transform: rotate(-270deg);}
+}
+
+@keyframes p{
+  50% {transform: rotate(180deg);}
+}
+

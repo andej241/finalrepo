@@ -55,7 +55,7 @@ padding: 10px;
 }
 
 .formatvideo{
- position: fixed;
+ position: fixed !important;
  overflow: hidden;
  top: 50%;
  left: 50%;
