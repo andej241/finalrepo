@@ -1,0 +1,95 @@
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+        margin: 0;
+}
+
+.land{
+    background-color: burlywood;
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    animation: 7s cv normal;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.tit{
+    opacity: 0;
+    animation: 9s v normal;
+
+}
+
+.tit:hover{
+    opacity: 1;
+
+}
+
+#sam{
+    height: 36vh;
+    width: 8vw;
+    z-index: 2;
+    position: absolute;
+    left: 13.5%;
+    top: 25%;
+    color: white;
+    padding-left: 1%;
+    padding-top: 5%;
+}
+
+#jordy{
+    height: 27vh;
+    width: 33vw;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%) ;
+    top: 23%;
+    color: white;
+    padding-left: 20%;
+    padding-top: 8%;
+
+}
+
+#murl{
+    height: 43vh;
+    width: 33vw;
+    z-index: 2;
+    position: absolute;
+    left: 98%;
+    transform: translate(-50%) ;
+    top: 17%;
+    padding-left: 5%;
+    color: white;
+    padding-top: 13%;
+
+}
+
+
+
+@keyframes cv{
+    from{
+      opacity: 1;
+    }
+    to{
+      opacity: 0;
+    }
+  }
+
+#jxa{
+    position: absolute;
+left: 38%;
+top: 40%;
+transform: translateX(-50%);
+transform: translateY(-50%);
+font-size: 500%;
+}
+
